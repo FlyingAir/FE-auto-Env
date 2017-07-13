@@ -3,13 +3,14 @@ var webpack = require('webpack');
 var path = require("path");
 
 module.exports = {
-    devtool: "source-map",
+    devtool: "cheap-eval-source-map",
     entry: {
-        "common2" : path.join(__dirname,'entry','common2.js')
+        "common" : path.join(__dirname,'entry','common.js')
     },
     output: {
         path: path.join(__dirname,'..','static','js'),
         filename: '[name].js',
+        
     },
     resolve: {
         alias:{

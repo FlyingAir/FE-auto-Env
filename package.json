@@ -5,10 +5,10 @@
   "main": "webpack.config.js",
   "scripts": {
     "start": "concurrently \"npm run ejs\" \"npm run style\" \"npm run js\"",
-    "ejs"  : "gulp develop &",
-    "style": "scss --watch develop/scss/common2.scss:static/css/common2.css --style compact -I ./develop/scss ",
+    "ejs"  : "gulp develop",
+    "style": "scss --watch develop/scss/common.scss:static/css/common.css --style compact -I ./develop/scss ",
     "js"   : "webpack --progress --profile --colors --display-error-details --display-cached --bail  --config ./develop/webpack.dev.js -w ",
-    "build": "webpack --progress --profile --colors --display-error-details --display-cached --bail --config ./develop/webpack.prod.js & scss develop/scss/common2.scss:static/css/common2.css --style compressed -I ./develop/scss & gulp production",
+    "build": "webpack --progress --profile --colors --display-error-details --display-cached --bail --config ./develop/webpack.prod.js & scss develop/scss/common.scss:static/css/common.css --style compressed -I ./develop/scss & gulp production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

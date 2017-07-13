@@ -8,6 +8,7 @@ export default class Router {
         this.viewUrl = urlQueryObj.url;
     }
     renderUrlView(){
+        console.log(MainView)
         MainView.router.load({
             url:this.viewUrl
         })
