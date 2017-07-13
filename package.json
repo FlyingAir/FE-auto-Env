@@ -1,0 +1,39 @@
+{
+  "name": "gshopper-static-kr",
+  "version": "1.0.0",
+  "description": "static project for gshopper app",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "concurrently \"npm run ejs\" \"npm run style\" \"npm run js\"",
+    "ejs"  : "gulp develop &",
+    "style": "scss --watch develop/scss/common2.scss:static/css/common2.css --style compact -I ./develop/scss ",
+    "js"   : "webpack --progress --profile --colors --display-error-details --display-cached --bail  --config ./develop/webpack.dev.js -w ",
+    "build": "webpack --progress --profile --colors --display-error-details --display-cached --bail --config ./develop/webpack.prod.js & scss develop/scss/common2.scss:static/css/common2.css --style compressed -I ./develop/scss & gulp production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.izene.com:gshopper/gshopper-static-kr.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.1",
+    "babel-plugin-transform-class-properties": "^6.23.0",
+    "babel-plugin-transform-object-assign": "^6.22.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-stage-3": "^6.22.0",
+    "browser-sync": "^2.18.8",
+    "copy-webpack-plugin": "^4.0.1",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-ejs": "^3.0.0",
+    "gulp-rename": "^1.2.2",
+    "html-webpack-plugin": "^2.28.0",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^6.0.0",
+    "webpack": "^2.2.1"
+  }
+}

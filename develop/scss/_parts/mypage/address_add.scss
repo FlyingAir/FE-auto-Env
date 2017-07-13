@@ -1,0 +1,90 @@
+@charset "UTF-8";
+@import 'base/base';
+
+.mypage_address-add_page{
+    *{box-sizing: border-box;}
+    .mypage_address-add_content{
+        padding:15px;
+        //override f7 style
+        header{
+            height:40px;line-height:40px;
+            font-size:13px;
+            color:$orange;
+            margin-left:0;
+        }
+        .input_with_button{
+            position:relative;
+            .inner_input{
+                padding-right:102px;
+            }
+            .inner_button{
+                position:absolute;
+                right:12px;top:50%;
+                margin-top:-15px;
+                border:1px solid $borderColor;
+                float:right;
+                padding:0 10px;
+                height:30px;line-height:30px;
+            }
+        }
+        .input_with_outline{
+            position:relative;
+            .inner_input{
+                padding-right:12px;
+            }
+            .inner_outline{
+                position:absolute;
+                left:0;top:0;
+                width:100%;height:100%;
+                padding:8px 14px 8px 92px;
+                &:before{
+                    content:'';
+                    display:block;
+                    width:100%;height:100%;
+                    border:1px solid $borderColor;
+                }
+            }
+        }
+        .input_with_checkbox{
+            background:$white;
+            border:1px solid $borderColor;
+            border-top:0;
+            padding-left:20px;
+            height:42px;line-height:42px;
+            overflow:hidden;
+            .item-media{
+                margin-bottom:0;
+            }
+            .icon-form-checkbox{
+                margin-right:5px;
+            }
+        }
+        .add_btn{
+            margin-top:15px;
+            display:block;
+            width:100%;height:45px;line-height:45px;
+            text-align:center;
+            color:$white;
+            background:$orange;
+        }
+        .edit_btns{
+            margin-top:15px;
+            width:100%;
+            .cancel,.confirm{
+                display:inline-block;
+                width:48%;
+                height:45px;line-height:45px;
+                text-align:center;
+                color:$white;
+            }
+            .cancel{
+                float:left;
+                background:$grey;
+            }
+            .confirm{
+                float:right;
+                background:$orange;
+            }
+        }
+    }
+}

@@ -1,0 +1,113 @@
+@charset "UTF-8";
+@import 'base/base';
+
+.mypage_member-info_page{
+    *{box-sizing:border-box}
+    .page-content{
+        padding-bottom:30px;
+    }
+}
+.mypage_member-info_content{
+    padding:10px 15px;
+    .list-block{
+        ul{
+            margin-bottom:10px;
+            li{
+                &.li_with_btn{
+                    position:relative;
+                    .li_btn{
+                        position:absolute;right:15px;top:5px;
+                        height:30px;line-height:30px;
+                        font-size:13px;
+                        color:$c28;
+                        border:1px solid $cd;
+                        padding:0 15px;
+                    }
+                }
+                &.li_with_icon{
+                    .item-content{
+                        position:relative;
+                        &:after{
+                            content:'';
+                            position:absolute;
+                            left:96px;top:12px;
+                            width:20px;height:20px;
+                            background:url(../img/sp.png) no-repeat;
+                            background-size:200px 200px;
+                            background-position:-60px 0;
+                        }
+                        input[type="text"]{
+                            padding-left:120px;
+                        }
+                    }
+                }
+
+            }
+        }
+        .switch_list{
+            border:1px solid $cd;
+            li{
+                overflow: hidden;
+                border-bottom:1px solid $cd;
+                &:last-child{
+                    border-bottom:0;
+                }
+            }
+            //override fm7 switch checkbox
+            .label-switch{
+                top:9px;
+                float:right;
+                margin-right:15px;
+                .checkbox{
+                    height:20px;
+                    &:after{
+                        top:-1px;
+                    }
+                }
+                input[type="checkbox"]:checked + .checkbox{
+                    background:$orange;
+                    &:after{
+                        background:$white;
+                    }
+                }
+            }
+        }
+    }
+    .bottom_btns{
+        margin-top:10px;
+        width:100%;
+        @include cf();
+        .cancel,.confirm{
+            display:inline-block;
+            width:48%;
+            height:45px;line-height:45px;
+            text-align:center;
+            color:$white;
+        }
+        .cancel{
+            float:left;
+            background:$grey;
+        }
+        .confirm{
+            float:right;
+            background:$orange;
+        }
+    }
+    .exit_tip{
+        display:block;
+        padding-left:20px;
+        height:30px;line-height:30px;
+        font-size:13px;
+        color:$c87;
+        position:relative;
+        &:before{
+            content:'';
+            width:20px;height:20px;
+            position:absolute;left:0;bottom:5px;
+            display:block;
+            background:url(../img/sp.png) no-repeat ;
+            background-size:250px 250px;
+            background-position:-225px -19px;
+        }
+    }
+}

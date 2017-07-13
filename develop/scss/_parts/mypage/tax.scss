@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@import 'base/base';
+
+.mypage_tax_page{
+    *{box-sizing:border-box}
+    .page-content{
+        padding-bottom:30px;
+    }
+}
+.mypage_tax_content{
+    margin:15px;
+    padding-bottom:15px;
+    background:$white;
+    border:1px solid $cd;
+}
+.mypage_tax_section{
+    padding:0 15px;
+    header{
+        font-size:13px;
+        text-align:center;
+        width:100%;
+        height:30px;line-height:30px;
+    }
+    ul{
+        li{
+            min-height:30px;line-height:30px;
+            position:relative;
+            border-top:1px solid $cd;
+            &:after{
+                content:'';
+                position:absolute;left:21%;top:0;
+                width:2px;height:100%;
+                background:$cd;
+            }
+            &.li_align_right{
+                .right{
+                    text-align:right;
+                }
+            }
+            &.li_total{
+                border:1px solid $cd;
+                font-weight:bold;
+                background:$f5;
+                .right{
+                    text-align:right;
+                    color:#e60000;
+                }
+            }
+            .left,.right{
+                display:inline-block;
+                vertical-align:middle;
+                padding:0 10px;
+                word-break:break-all;
+                color:$c28;
+            }
+            .left{
+                width:21%;
+            }
+            .right{
+                width:77%;
+            }
+        }
+    }
+}
+
+.mypage_tax_section_2{
+    header{
+        width:100%;height:60px;line-height:60px;
+        text-align:center;
+        font-weight:bold;
+    }
+    ul{
+        li{
+            border-left:1px solid $cd;
+            border-right:1px solid $cd;
+            background:$f5;
+            &:after{
+                width:1px;
+            }
+            &:last-child{
+                border-bottom:1px solid $cd;
+            }
+        }
+    }
+}
+.mypage_tax_des{
+    padding:10px 15px;
+    min-height:15px;line-height:15px;
+    font-size:13px;
+    color:$c87;
+}
+.tax_btn{
+    margin:0 15px 30px;
+    background:$white;
+    border:1px solid $orange;
+    color:$orange;
+    font-size:15px;
+    text-align:center;
+    height:40px;line-height:40px;
+}

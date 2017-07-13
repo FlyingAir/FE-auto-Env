@@ -1,0 +1,86 @@
+<div class="statusbar-overlay"></div>
+<div class="panel-overlay"></div>
+<div class="views">
+    <div class="view view-main">
+        <div class="pages navbar-fixed">
+            <div data-page="address_add" class="page page-on-center mypage_member-info_page">
+                <% include ./_parts/navbar %>
+
+                <div class="page-content">
+
+                    <section class="mypage_member-info_content">
+
+                        <div class="list-block">
+                            <%for(var u = 0 ; u < 2 ; u++){%>
+                            <ul>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title label">label</div>
+                                            <div class="item-input">
+                                                <input type="text" placeholder="value">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="li_with_icon facebook_icon">
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title label">label</div>
+                                            <div class="item-input">
+                                                <input type="text" placeholder="value">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="li_with_btn">
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title label">label</div>
+                                            <div class="item-input">
+                                                <input type="text" placeholder="value">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="li_btn">button</span>
+                                </li>
+                            </ul>
+                            <%}%>
+
+                            <ul class="switch_list">
+                                <%for(var i = 0 ; i < 4 ; i ++ ){%>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title label">Switch</div>
+                                            <div class="item-input">
+                                                <label class="label-switch">
+                                                    <input type="checkbox" checked="checked">
+                                                    <div class="checkbox"></div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <%}%>
+                            </ul>
+                        </div>
+
+                        <div class="bottom_btns">
+                            <span class="cancel">cancel</span>
+                            <span class="confirm">confirm</span>
+                        </div>
+
+                        <span class="exit_tip">exit tip</span>
+
+                    </section>
+                </div>
+
+                <% include ./_parts/toolbar %>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

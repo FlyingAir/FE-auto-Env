@@ -1,0 +1,67 @@
+<div class="statusbar-overlay"></div>
+<div class="panel-overlay"></div>
+<div class="views">
+    <div class="view view-main">
+        <div class="pages navbar-fixed">
+            <div data-page="logistics" class="page page-on-center mypage_tax_page">
+                <% include ./_parts/navbar %>
+
+                <div class="page-content">
+
+                    <section class="mypage_tax_content">
+                        <section class="mypage_tax_section mypage_tax_section_1">
+                            <header><b>bold</b>(normal)</header>
+                            <ul>
+                                <%for(var i = 0 ; i < 7 ; i++){%>
+                                <li>
+                                    <span class="left">left</span>
+                                    <span class="right">right</span>
+                                </li>
+                                <%}%>
+                                <%for(var i = 0 ; i < 3 ; i++){%>
+                                <li class="li_align_right">
+                                    <span class="left">left</span>
+                                    <span class="right">right</span>
+                                </li>
+                                <%}%>
+                                <li class="li_total">
+                                    <span class="left">left</span>
+                                    <span class="right">right</span>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section class="mypage_tax_section mypage_tax_section_2">
+                            <header>title</header>
+                            <ul>
+                                <%for(var i = 0 ; i < 10 ; i++){%>
+                                <li>
+                                    <span class="left">left</span>
+                                    <span class="right">right</span>
+                                </li>
+                                <%}%>
+                            </ul>
+                        </section>
+
+                        <p class="mypage_tax_des">
+                            des des des des des des des des des des des des des des des des
+                            des des des des des des des des des des des des des des des des
+                        </p>
+
+                    </section>
+                        <div class="tax_btn">
+                            i'm a button
+                        </div>
+                </div>
+
+
+                <% include ./_parts/toolbar %>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+

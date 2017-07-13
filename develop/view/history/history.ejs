@@ -1,0 +1,62 @@
+<div class="statusbar-overlay"></div>
+<div class="panel-overlay"></div>
+<div class="views">
+    <div class="view view-main">
+        <div class="pages navbar-fixed">
+            <div data-page="history" class="page page-on-center history_page">
+                <% include ./_parts/navbar %>
+
+                    <div class="page-content">
+                        <div class="history_page_content">
+                            <div class="history_tools">
+                                <li class="input_with_checkbox">
+                                    <label class="label-checkbox item-content agree_check">
+                                        <input type="checkbox" name="agree1" value="이용약관(필수)" checked="checked">
+                                        <div class="item-media"><i class="icon icon-form-checkbox"></i>총 <i class="total_num">6</i>개</div>
+                                    </label>
+                                </li>
+                                <a class="del_btn" href="#">삭제</a>
+                            </div>
+                            <div class="history_lists">
+                                <%for(var i = 0 ; i <2; i++){%>
+                                    <div class="history_product_item">
+                                        <div class="product_item_top">
+                                            <li class="input_with_checkbox">
+                                                <label class="label-checkbox item-content agree_check">
+                                            <input type="checkbox" name="agree1" value="이용약관(필수)" checked="checked">
+                                            <div class="item-media">
+                                                <i class="icon icon-form-checkbox"></i>
+                                            </div>
+                                        </label>
+                                            </li>
+                                            <a href="#" class="btn_delete"></a>
+                                        </div>
+                                        <div class="product_info">
+                                            <img src="./img/product01.png" alt="">
+                                            <div class="history_goods_info">
+                                                <p class="history_product_title">샤오미 미밴드1S펄스 스마트밴드 미밴드</p>
+                                                <span class="sale_percent">50%</span>
+                                                <p class="goods_prices">
+                                                    <del class="origin_price">$600.00</del>
+                                                    <span class="current_price">$300.00 <i class="korea_price">(약 250,687원)</i></span>
+                                                </p>
+                                                <p class="goods_tags">
+                                                    <i><img src="./img/korea_test.png" alt=""></i>
+                                                    <%for(var j = 0 ; j < 4 ; j++){%>
+                                                        <span class="tags_item">묶음배송</span>
+                                                        <%}%>
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <%}%>
+                            </div>
+                        </div>
+                    </div>
+                    <% include ./_parts/toolbar %>
+
+            </div>
+        </div>
+    </div>
+</div>

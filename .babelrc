@@ -1,0 +1,24 @@
+{
+    "presets": [
+        "es2015",
+        "stage-3"
+    ],
+    "env": {
+        "development": {
+            "plugins": [
+                "transform-object-assign",
+            [
+                "transform-class-properties",
+                { "spec": true }
+            ]
+            ]
+        },
+        "production": {
+            "plugins": [
+                "transform-object-assign",
+                ["transform-class-properties", { "spec": true }],
+            ]
+        }
+    }
+}
+

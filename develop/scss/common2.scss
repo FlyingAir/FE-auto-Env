@@ -1,0 +1,22 @@
+@charset "UTF-8";
+@import 'base/base';
+
+
+//_parts
+@import '_parts/mypage/index';
+@import '_parts/mypage/address';
+@import '_parts/mypage/address_add';
+@import '_parts/mypage/buy_list';
+@import '_parts/mypage/logistics';
+@import '_parts/mypage/tax';
+@import '_parts/mypage/member_info';
+@import '_parts/mypage/member_drop';
+@import '_parts/mypage/member_drop_success';
+@import '_parts/main/main.scss';
+@import '_parts/category/category.scss';
+@import '_parts/category/category_product.scss';
+@import '_parts/cart/cart.scss';
+@import '_parts/search/search.scss';
+@import '_parts/history/history.scss';
+
+

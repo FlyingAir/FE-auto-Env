@@ -1,0 +1,76 @@
+<div class="statusbar-overlay"></div>
+<div class="panel-overlay"></div>
+<div class="views">
+    <div class="view view-main">
+        <div class="pages navbar-fixed">
+            <div data-page="buy_list" class="page page-on-center mypage_buy-list_page">
+                <% include ./_parts/navbar %>
+
+                <div class="page-content">
+
+                    <section class="mypage_buy-list_content">
+                        <header class="main_header">
+                            <span class="left">left string</span>
+                            <span class="right">right string</span>
+                        </header>
+                        <div>
+                            <%for(var s = 0 ; s < 3 ; s++){%>
+                            <section class="mypage_buy-list_child_section">
+                                <header>
+                                    <span class="header_title">title</span>
+                                    <div class="header_button">button1</div>
+                                    <div class="header_button">button2</div>
+                                </header>
+                                <ul>
+                                    <%for(var i = 0 ; i < 3 ; i++){%>
+                                    <li class="font_style_<%=i%>">
+                                        <div class="left">
+                                            left label
+                                        </div>
+                                        <div class="right">
+                                            <% if(i === 1){ %>
+                                            <img src="./img/korea_test.png" >
+                                            <%}%>
+                                            right value,
+                                            right value,
+                                            right value,
+                                        </div>
+                                        <i class="border"></i>
+                                    </li>
+                                    <%}%>
+                                </ul>
+                            </section>
+                            <%}%>
+                        </div>
+
+                        <div class="note_wrap">
+                            <div class="list-block accordion-list">
+                                <ul>
+                                    <li class="accordion-item accordion-item-expanded">
+                                        <a href="#" class="item-content item-link">
+                                            <div class="item-inner">
+                                                <div class="item-title">note</div>
+                                            </div>
+                                        </a>
+                                        <div class="accordion-item-content">
+                                            <div class="content-block">
+                                                <p>Item 1 content. Lorem ipsum dolor sit amet...</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </section>
+                </div>
+
+
+                <% include ./_parts/toolbar %>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
