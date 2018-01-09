@@ -1,0 +1,1 @@
+{"version":3,"sources":["base.css"],"names":[],"mappings":"AACA;EACE,sBAAsB;EACtB,cAAY;CACb","file":"base.css","sourcesContent":["$blue:#152eff;\r\nbody{\r\n  background-color:#aaa;\r\n  color:$blue;\r\n}"]}

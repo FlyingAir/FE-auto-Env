@@ -1,0 +1,5 @@
+$blue:#152eff;
+body{
+  background-color:#aaa;
+  color:$blue;
+}
